@@ -1,1 +1,35 @@
-<?xml version="1.0" ?><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs19"/><g id="g2996" transform="translate(0.32800146,0.07000866)"><g id="g2987" style="fill:#e44d26;fill-opacity:1"><path d="m 511.672,255.92999 c 0,141.3849 -114.61511,256 -256,256 -141.3849,0 -256.00000293,-114.6151 -256.00000293,-256 C -0.32800293,114.5451 114.2871,-0.07000732 255.672,-0.07000732 c 141.38489,0 256,114.61510732 256,255.99999732 z" id="path2989" style="fill:#e44d26;fill-opacity:1"/></g><g id="g4311" transform="translate(546.9375,-48.721188)"><polygon id="polygon4184" points="255.8,486.486 389.249,449.489 418.938,116.909 93.063,116.909 122.719,449.542 " style="fill:#ffffff;fill-rule:evenodd" transform="matrix(0.67510549,0,0,0.67510549,-464.09284,131.48662)"/><path d="m -353.99731,163.21455 h -12.80338 v -13.82818 h -13.99561 v 41.87544 h 13.99629 v -14.02262 h 12.8027 v 14.02262 h 13.99629 v -41.87544 h -13.99697 v 13.82818 z m 20.08101,0.0581 h 12.32203 v 27.9892 h 13.99696 v -27.9892 h 12.32742 v -13.88624 h -38.64641 v 13.88624 z m 68.35173,0.82768 -8.97823,-14.71392 h -14.59375 v 41.87544 h 13.69451 v -20.75612 l 9.63578,14.88945 h 0.24102 l 9.62903,-14.88945 v 20.75612 h 13.93822 v -41.87544 h -14.59983 l -8.96675,14.71392 z m 44.53401,13.31983 v -28.03375 h -14.00034 v 41.87544 h 33.68372 v -13.84169 h -19.68338 z" id="path4208" style="fill:#ffffff;fill-rule:evenodd"/><path d="m -360.5,255.75 138.25,0 -2.25,28.5 -105.75,0 3,27.5 99.5,0 -7,85.25 -56,15.25 -56.75,-15.25 -4.25,-43.5 27.75,0 2.25,21.5 30.75,8.75 30.75,-8.75 3,-35.25 -95.5,0 z" id="path4309" style="fill:#e44d26;fill-opacity:1;stroke:none" transform="translate(-0.32800146,-0.07000866)"/></g></g><g id="Layer_1_1_"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 683 683" style="enable-background:new 0 0 683 683;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{font-family:'Akrobat-Regular';}
+	.st4{font-size:29.885px;}
+	.st5{fill:#000000;}
+</style>
+<g id="Layer_1" class="st0">
+	<g class="st1">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="12.1373" y1="2.4592" x2="522.6369" y2="527.9149">
+			<stop  offset="0" style="stop-color:#696969"/>
+			<stop  offset="1" style="stop-color:#3D3D3D"/>
+		</linearGradient>
+		<rect x="0.03" class="st2" width="683" height="683"/>
+		<path d="M550.92,201.86L432.02,391.5l-74.55-142.6c-5-9.56-5.59-20.82-1.62-30.85l41.39-104.53c0.18-0.47-0.49-0.77-0.72-0.33
+			l-52.91,101.2c-0.88,1.69-3.3,1.69-4.19,0l-52.91-101.2c-0.23-0.44-0.9-0.14-0.72,0.33l41.39,104.53
+			c3.97,10.03,3.38,21.29-1.62,30.85l-74.55,142.6L132.14,201.87c-0.25-0.4-0.87-0.1-0.71,0.35l112.11,296.19
+			c0.35,0.91,1.63,0.92,1.99,0.01l94.36-240.04c0.58-1.48,2.68-1.48,3.27,0l94.85,239.55c0.36,0.91,1.64,0.9,1.99-0.02
+			l111.63-295.72C551.79,201.76,551.17,201.45,550.92,201.86z"/>
+		<text transform="matrix(0.9821 0 0 1 226.8129 547.3672)" class="st3 st4">W A R A S R E M E D Y</text>
+	</g>
+</g>
+<g id="Layer_2">
+	<path class="st5" d="M681.81,171.72L490.39,477.04c-0.8,1.28-2.7,1.21-3.4-0.13L367.41,248.18c-8.12-15.54-9.08-33.84-2.63-50.14
+		l67.27-169.89c0.3-0.76-0.79-1.26-1.17-0.53L344.9,192.09c-1.44,2.75-5.37,2.75-6.81,0L252.1,27.61c-0.38-0.72-1.47-0.22-1.17,0.53
+		l67.27,169.89c6.45,16.3,5.49,34.6-2.63,50.14L195.99,476.9c-0.7,1.34-2.6,1.42-3.4,0.13L1.19,171.74
+		c-0.41-0.66-1.42-0.16-1.15,0.57L182.26,653.7c0.56,1.48,2.65,1.5,3.23,0.02L338.85,263.6c0.95-2.41,4.35-2.41,5.31-0.01
+		L498.3,652.92c0.58,1.47,2.67,1.46,3.23-0.03l181.42-480.6C683.23,171.56,682.22,171.06,681.81,171.72z"/>
+</g>
+</svg>
