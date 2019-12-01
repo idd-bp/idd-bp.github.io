@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap');
+
+html {
+    --primary: #000000;
+    --primary-light: #1e1e1e;
+    --secondary: #2F4550;
+    --secondary-light: #6095AF;
+    --error: #c94249;
+    --action: #7DB237;
+    --links: #2877FF;
+
+    --on-primary: #FFFFFF;
+    --on-secondary: #000000;
+    
+    --font-a: 'Poppins', sans-serif;
+    --font-b: 'Raleway', sans-serif;
+}
+
+
+a {
+    color: var(--on-primary);
+}
+
+.navarea {
+    display: grid;
+    grid-template-columns: 3em auto 3em;
+    grid-template-areas: 
+      "hamb logo cart"
+      "srch srch srch"
+      "menu menu menu";
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img{
+    max-width: 3em;
+    grid-area: logo;
+    text-align: center;
+}
+
+.hamburger {
+    background-color: transparent;
+    color: var(--primary);
+    border: none;
+    padding: 0 1em 0 1em ;
+    grid-area: hamb;
+}
+
+.cart {
+    grid-area: cart;
+    color: var(--on-secondary);
+    margin-top: 0.75em;
+    margin-left: 0.25em;
+}
+
+.searchbar {
+    background-color: var(--on-primary);
+    border: auto;
+    padding: 0.5em;
+    margin: 0 1em;
+    border-radius: 1em;
+    background-repeat: no-repeat;
+    grid-area: srch;
+    text-align: center;
+  }
+
+.searchbtn {
+    background-color: transparent;
+    color: var(--primary);
+    border: none;
+    margin-left: 1em;
+  }
+
+.menu {
+    font-family: var(--font-a);
+    color: var(--on-primary);
+    background-color: var(--primary-light);
+    text-decoration: none;
+    line-height: 3;
+    display: block;
+    text-align: center;
+    grid-area: menu;
+}
+
+.filters {
+    text-align: center;
+}
+
+.filters h2 {
+    font-family: var(--font-a);
+    color: var(--on-secondary);
+    font-size: 1.25em;
+    margin-top: 1em;
+}
+
+.sorting {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.filters-grid {
+    background-color: var(--secondary-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em 1em 1em 1em;
+    text-align: start;
+}
+
+.products-list {
+    text-align: center;
+}
+
+.products-list h2{
+    font-family: var(--font-a);
+    color: var(--on-secondary);
+    font-size: 1.25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.product img {
+    max-width: 20em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.product h3 {
+    font-family: var(--font-b);
+    font-weight: bold;
+    margin: 1em;
+}
+
+.product p {
+    font-family: var(--font-a);
+    font-size: 0.75em;
+    margin-bottom: 1em;
+}
+
+.specs {
+    font-family: var(--font-a);
+    background-color: var(--secondary-light);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em 1em 1em 1em;
+    text-align: start; 
+}
+
+.actions {
+    font-family: var(--font-a);
+    background-color: var(--secondary);
+    color: var(--on-primary);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em 1em 1em 1em;
+    text-align: start; 
+}
+
+.actions dt {
+    font-size: 0.75em;
+}
+
+.actions dd {
+    color: var(--action);
+}
+
+.actions dl data {
+    margin-left: 1em;
+}
+
+.actions button {
+    border-radius: 0.5em;
+    border: none;
+}
+
+.page-counter {
+    background-color: var(--primary-light);
+    color: var(--on-primary);
+    text-align: center;
+}
+
+.page-counter p {
+    font-family: var(--font-a);
+    padding: 1em;
+}
+
+.bottom-page {
+    background-color: var(--primary-light);
+    color: var(--on-primary);
+    text-align: center;
+}
+
+.bottom-page p {
+    font-family: var(--font-b);
+    margin-bottom: 1em;
+}
+
+.bottom-page a {
+    font-family: var(--font-b);
+}
+
+.bottom-page ul {
+    padding: 1em;
+}
