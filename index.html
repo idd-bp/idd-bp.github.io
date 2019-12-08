@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wicked Wear</title>
-    <meta name="description" content="[A short description]">
-    <meta name="author" content="[Your Name]">
-    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+    <title>Wicked Tech</title>
+    <meta name="description" content="Hottest Smartphones">
+    <meta name="author" content="Bogdan Punyak">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/index.css">
   </head>
@@ -19,21 +19,8 @@
           <span class="material-icons">menu</span>
         </button>
 
-        <ul class="menu">
-          <li><a href="#">Category</a>
-            <ul>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-        </ul>
-
-        <form class="searchbar">
-            <input type="search" name="find" id="find">
+        <form class="searchbar" for="nameSearch">
+          <input type="search" name="productName" id="nameSearch">
           </label>
           <button type="button" class="searchbtn"><span class="material-icons">search</span></button>
         </form>
@@ -51,52 +38,61 @@
             <select name="sort" id="sort">
               <option value="price-high">Price, highest to lowest</option>
               <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
+
             </select>
           </fieldset>
           
           <div class="filters-grid">
-
             <fieldset class="brands">
-              <legend>Brand</legend>
-              <ul>
-                <li><input type="checkbox" name="brand" value="apple" id="apple"> <label for="apple">Apple</label></li>
-                <li><input type="checkbox" name="brand" value="oneplus" id="oneplus"> <label for="oneplus">OnePlus</label></li>
-                <li><input type="checkbox" name="brand" value="samsung" id="samsung"> <label for="samsung">Samsung</label></li>
-                <li><input type="checkbox" name="brand" value="huawei" id="huawei"> <label for="huawei">Huawei</label></li>
-                <li><input type="checkbox" name="brand" value="sony" id="sony"> <label for="sony">Sony</label></li>
-              </ul>
+              <label for="brand">Brand</label>
+              <select name="filterbybrand" id="filterbybrand">
+                <option value="0" disabled selected>-- Select --</option>
+                <option value="apple">Apple</option>
+                <option value="asus">Asus</option>
+                <option value="google">Google</option>
+                <option value="huawei">Huawei</option>
+                <option value="lg">LG</option>
+                <option value="nokia">Nokia</option>
+                <option value="oneplus">OnePlus</option>
+                <option value="samsung">Samsung</option>
+                <option value="sony">Sony</option>
+                <option value="vivo">Vivo</option>
+                <option value="xiaomi">Xiaomi</option>
+              </select>
             </fieldset>
 
             <fieldset class="colors">
-              <legend>Colour</legend>
-              <ul>
-                <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-                <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-                <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-                <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-              </ul>
+              <label for="colours">Colour</label>
+              <select name="filterbycolour" id="filterbycolour">
+                <option value="0" disabled selected>-- Select --</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="grey">Gray</option>
+                <option value="blue">Blue</option>
+              </select>
             </fieldset>
 
             <fieldset class="storage">
-              <legend>Storage</legend>
-              <ul>
-                <li><input type="checkbox" name="colour" value="16gb" id="16gb"> <label for="16gbk">16 GB</label></li>
-                <li><input type="checkbox" name="colour" value="32gb" id="32gb"> <label for="32gb">32 GB</label></li>
-                <li><input type="checkbox" name="colour" value="64gb" id="64gb"> <label for="64gb">64 GB</label></li>
-                <li><input type="checkbox" name="colour" value="128gb" id="128gb"> <label for="128gb">128 GB</label></li>
-              </ul>
+              <label for="storage">Storage</label>
+              <select name="filterbystorage" id="filterbystorage">
+                <option value="0" disabled selected>-- Select --</option>
+                <option value="16">16 GB</option>
+                <option value="32">32 GB</option>
+                <option value="64">64 GB</option>
+                <option value="128">128 GB</option>
+                <option value="256">256 GB</option>
+              </select>
             </fieldset>
 
             <fieldset class="ram">
-                <legend>RAM</legend>
-                <ul>
-                  <li><input type="checkbox" name="colour" value="6gb" id="6gb"> <label for="6gbk">6 GB</label></li>
-                  <li><input type="checkbox" name="colour" value="8gb" id="8gb"> <label for="8gb">8 GB</label></li>
-                  <li><input type="checkbox" name="colour" value="12gb" id="12gb"> <label for="12gb">12 GB</label></li>
-                </ul>
-              </fieldset>
+              <label for="ram">RAM</label>
+              <select name="filterbyram" id="filterbyram">
+                <option value="0" disabled selected>-- Select --</option>
+                <option value="6">6 GB</option>
+                <option value="8">8 GB</option>
+              </select>
           </div>
+          <button class="clear" onclick="resetFilters()">Clear</button>
         </form>
       </header>
 
@@ -109,7 +105,17 @@
       </section>
 
       <footer class="page-counter">
-        <p>1-5 of 5 products found</p>
+        <p>20 products found</p>
+        <nav aria-label="Product Pages" class="pagelist" id="listingTable">
+          <a href="#" aria-label="Previous page" id="btn_prev">prev</a>
+          <ul class="pagelist">
+            <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+            <li><a href="#" aria-label="Page 2">2</a></li>
+            <li><a href="#" aria-label="Page 3">3</a></li>
+            <li><a href="#" aria-label="Page 4">4</a></li>
+          </ul>
+          <a href="#" aria-label="Next page" id="btn_next">next</a>
+        </nav>
       </footer>
     </main>
 
