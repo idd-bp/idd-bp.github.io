@@ -1,51 +1,224 @@
 const products = [
     {
         name: `OnePlus 7 Pro`,
-        id: `1`,
+        id: 1,
         brand: `oneplus`,
-        colour: `black`,
-        storage: `64gb`,
-        ram: `8gb`,
+        colour: `blue`,
+        storage: 64,
+        ram: 8,
         available: `In Stock`,
-        retailprice: `899`,
-        saleprice: `799`,
+        retailprice: 899,
+        saleprice: 799,
         image: `img/product1.jpg`
     }, {
         name: `Samsung Galaxy Note 10`,
-        id: `2`,
+        id: 2,
         brand: `samsung`,
         colour: `black`,
-        storage: `256gb`,
-        ram: `8gb`,
+        storage: 256,
+        ram: 8,
         available: `In Stock`,
+        retailprice: 1399,
+        saleprice: 1299,
         image: `img/product2.jpg`
     }, {
-        name: `Apple Iphone 11 Pro`,
-        id: `3`,
+        name: `Apple Iphone 11 Pro Max`,
+        id: 3,
         brand: `apple`,
         colour: `black`,
-        storage: `512gb`,
-        ram: `4gb`,
+        storage: 512,
+        ram: 4,
         available: `Back Order`,
+        retailprice: 1499,
+        saleprice: 1399,
         image: `img/product3.jpg`
     }, {
         name: `Huawei P30 Pro`,
-        id: `4`,
+        id: 4,
         brand: `huawei`,
         colour: `grey`,
-        storage: `64gb`,
-        ram: `6gb`,
+        storage: 64,
+        ram: 6,
         available: `In Stock`,
+        retailprice: 899,
+        saleprice: 759,
         image: `img/product4.jpg`
     }, {
         name: `Sony Xperia 1`,
-        id: `5`,
+        id: 5,
         brand: `sony`,
         colour: `black`,
-        storage: `64gb`,
-        ram: `6gb`,
+        storage: 64,
+        ram: 6,
         available: `In Stock`,
+        retailprice: 899,
+        saleprice: 699,
         image: `img/product5.jpg`
+    }, {
+        name: `Apple Iphone 11 Pro`,
+        id: 6,
+        brand: `apple`,
+        colour: `black`,
+        storage: 256,
+        ram: 4,
+        available: `Back Order`,
+        retailprice: 1299,
+        saleprice: 1199,
+        image: `img/product6.jpg`
+    }, {
+        name: `Apple Iphone 11`,
+        id: 7,
+        brand: `apple`,
+        colour: `black`,
+        storage: 128,
+        ram: 4,
+        available: `In Stock`,
+        retailprice: 1099,
+        saleprice: 999,
+        image: `img/product7.jpg`
+    }, {
+        name: `Nokia 2.3`,
+        id: 8,
+        brand: `nokia`,
+        colour: `blue`,
+        storage: 16,
+        ram: 6,
+        available: `In Stock`,
+        retailprice: 899,
+        saleprice: 799,
+        image: `img/product8.jpg`
+    }, {
+        name: `Nokia 7.2`,
+        id: 9,
+        brand: `nokia`,
+        colour: `blue`,
+        storage: 64,
+        ram: 6,
+        available: `In Stock`,
+        retailprice: 999,
+        saleprice: 899,
+        image: `img/product9.jpg`
+    }, {
+        name: `LG G8X ThinQ`,
+        id: 10,
+        brand: `lg`,
+        colour: `black`,
+        storage: 128,
+        ram: 6,
+        available: `In Stock`,
+        retailprice: 999,
+        saleprice: 899,
+        image: `img/product10.jpg`
+    }, {
+        name: `LG V50S ThinQ 5G`,
+        id: 11,
+        brand: `lg`,
+        colour: `black`,
+        storage: 128,
+        ram: 8,
+        available: `In Stock`,
+        retailprice: 1099,
+        saleprice: 999,
+        image: `img/product11.jpg`
+    }, {
+        name: `Xiaomi Redmi Note 8T`,
+        id: 12,
+        brand: `xiaomi`,
+        colour: `blue`,
+        storage: 32,
+        ram: 4,
+        available: `In Stock`,
+        retailprice: 399,
+        saleprice: 299,
+        image: `img/product12.jpg`
+    }, {
+        name: `Xiaomi Mi Note 10 Pro`,
+        id: 13,
+        brand: `xiaomi`,
+        colour: `blue`,
+        storage: 128,
+        ram: 8,
+        available: `In Stock`,
+        retailprice: 599,
+        saleprice: 399,
+        image: `img/product13.jpg`
+    }, {
+        name: `Google Pixel 4 XL`,
+        id: 14,
+        brand: `google`,
+        colour: `black`,
+        storage: 128,
+        ram: 6,
+        available: `In Stock`,
+        retailprice: 999,
+        saleprice: 899,
+        image: `img/product14.jpg`
+    }, {
+        name: `Google Pixel 4`,
+        id: 15,
+        brand: `google`,
+        colour: `black`,
+        storage: 64,
+        ram: 8,
+        available: `In Stock`,
+        retailprice: 799,
+        saleprice: 699,
+        image: `img/product15.jpg`
+    }, {
+        name: `Vivo IQOO Neo 855 Racing`,
+        id: 16,
+        brand: `vivo`,
+        colour: `blue`,
+        storage: 128,
+        ram: 8,
+        available: `In Stock`,
+        retailprice: 999,
+        saleprice: 899,
+        image: `img/product16.jpg`
+    }, {
+        name: `Vivo Y9s`,
+        id: 17,
+        brand: `vivo`,
+        colour: `white`,
+        storage: 128,
+        ram: 8,
+        available: `In Stock`,
+        retailprice: 899,
+        saleprice: 799,
+        image: `img/product17.jpg`
+    }, {
+        name: `Asus ROG Phone II ZS660KL`,
+        id: 18,
+        brand: `asus`,
+        colour: `black`,
+        storage: 128,
+        ram: 8,
+        available:`In Stock`,
+        retailprice: 1199,
+        saleprice: 999,
+        image: `img/product18.jpg`
+    }, {
+        name: `Asus Zenfone 6 ZS630KL`,
+        id: 19,
+        brand: `asus`,
+        colour: `black`,
+        storage: 128,
+        ram: 8,
+        available: `In Stock`,
+        retailprice: 1099,
+        saleprice: 999,
+        image: `img/product19.jpg`
+    }, {
+        name: `Oppo A11`,
+        id: 20,
+        brand: `oppo`,
+        colour: `blue`,
+        storage: 256,
+        ram: 6,
+        available: `In Stock`,
+        retailprice: 699,
+        saleprice: 599,
+        image: `img/product20.jpg`
     }
 ]
 
@@ -53,36 +226,24 @@ function getProductAsHtmlString(products) {
 
     return `<article class="product">
                 <header>
-                    <img src="${products.image} alt="Product Image">
+                    <img src="${products.image}" alt="Product Image">
                 </header>
                 <h3>${products.name}</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique. wadwadawdawddawdwa</p>
                 <form class="specs">
                     <fieldset>
                         <legend>Colours</legend>
-                        <ul>
-                            <li><label><input type="radio" name="colour" value="blck"> <span>Black</span></label></li>
-                            <li><label><input type="radio" name="colour" value="blue"> <span>Blue</span></label></li>
-                            <li><label><input type="radio" name="colour" value="grey"> <span>Grey</span></label></li>
-                        </ul>
+                        <p class="specsfield">${products.colour}</p>
                     </fieldset>
 
                     <fieldset>
                         <legend>Storage</legend>
-                        <ul>
-                            <li><label><input type="radio" name="storage" value="64gb"> <span>64 GB</span></label></li>
-                            <li><label><input type="radio" name="storage" value="128gb"> <span>128 GB</span></label></li>
-                            <li><label><input type="radio" name="storage" value="256gb"> <span>256 GB</span></label></li>
-                        </ul>
+                        <p class="specsfield">${products.storage} GB</p>
                     </fieldset>
 
                     <fieldset>
                         <legend>RAM</legend>
-                        <ul>
-                            <li><label><input type="radio" name="ram" value="6gb"> <span>6 GB</span></label></li>
-                            <li><label><input type="radio" name="ram" value="8gb"> <span>8 GB</span></label></li>
-                            <li><label><input type="radio" name="ram" value="12gb"> <span>12 GB</span></label></li>
-                        </ul>
+                        <p class="specsfield">${products.ram} GB</p>
                     </fieldset>
                 </form>
 
@@ -104,4 +265,81 @@ function renderProducts(arr) {
     document.getElementById('products').innerHTML = strOfHtml;
   }
 
+function filterByName(products) {
+    return products.name.toLowerCase().includes(this.trim().toLowerCase())
+  }
+
+function searchByName(event) {
+    const searchTerm = event.target.value; 
+    const arrNameCheck = products.filter(filterByName, searchTerm)
+    renderProducts(arrNameCheck);
+}
+
+// function sortByPriceAscending() {
+//     products.sort((a,b) => Number(a.saleprice) - Number(b.saleprice))
+
+// }
+
+// function sortByPriceDescending() {
+//     products.sort((a,b) => Number(b.saleprice) - Number(a.saleprice))
+
+// }
+
+
+function filterByBrand(products) {
+    return products.brand == this;
+  }
+  
+function filterByColour(products) {
+    return products.colour == this;
+}
+
+function filterByStorage(products) {
+    return products.storage == this;
+}
+
+function filterByRAM(products) {
+    return products.ram == this;
+}
+
+
+function searchByBrand(event) {
+    const searchTerm = event.target.value;
+    const arrCatCheck = products.filter(filterByBrand, searchTerm)
+    renderProducts(arrCatCheck);
+  }
+
+function searchByColour(event) {
+    const searchTerm = event.target.value;
+    const arrCatCheck = products.filter(filterByColour, searchTerm)
+    renderProducts(arrCatCheck);
+  }
+
+function searchByStorage(event) {
+    const searchTerm = event.target.value;
+    const arrCatCheck = products.filter(filterByStorage, searchTerm)
+    renderProducts(arrCatCheck);
+  }
+
+function searchByRAM(event) {
+    const searchTerm = event.target.value;
+    const arrCatCheck = products.filter(filterByRAM, searchTerm)
+    renderProducts(arrCatCheck);
+  }
+
+function resetFilters() {
+    document.getElementById(filterByBrand).reset();
+    document.getElementById(filterByColour).reset();
+    document.getElementById(filterByStorage).reset();
+    document.getElementById(filterByRAM).reset();
+}
+
 renderProducts(products);
+
+
+document.getElementById('nameSearch').addEventListener('input', searchByName)
+document.getElementById('filterbybrand').addEventListener('change', searchByBrand)
+document.getElementById('filterbycolour').addEventListener('change', searchByColour)
+document.getElementById('filterbystorage').addEventListener('change', searchByStorage)
+document.getElementById('filterbyram').addEventListener('change', searchByRAM)
+
