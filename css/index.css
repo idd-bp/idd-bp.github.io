@@ -206,3 +206,26 @@ a {
 .bottom-page ul {
     padding: 1em;
 }
+
+
+.specsfield {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.pagelist a {
+    display: inline;
+}
+
+.pagelist li{
+    display: inline;
+    padding: 2em;
+}
+
+.clear {
+    margin-top: 0.5em;
+    background-color: var(--secondary-light);
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
