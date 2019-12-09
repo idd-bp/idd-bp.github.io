@@ -354,6 +354,14 @@ function addToCart(productToCart) {
     document.getElementById('cartnumber').innerHTML = numProductsInCart;
 }
 
+
+// function pagination() {
+//     var productsOnPage = products.splice(5);
+//     return productsOnPage
+// }
+
+
+
 renderProducts(products);
 
 document.getElementById('nameSearch').addEventListener('input', searchByName)
