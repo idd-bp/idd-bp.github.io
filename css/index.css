@@ -229,3 +229,10 @@ a {
     padding: 0.5em;
     border-radius: 0.5em;
 }
+
+.cartnumber {
+    font-size: 1em;
+    color: #c94249;
+    text-align: center;
+    text-decoration: none;
+}
