@@ -276,16 +276,26 @@ function searchByName(event) {
 }
 
 //Sort by price
+//Only chooses the first option of the if statement
+function sortByPrice() {
 
-// function sortByPriceAscending() {
-//     products.sort((a,b) => Number(a.saleprice) - Number(b.saleprice))
+    if (document.getElementById('sort').value = 'price-high') {
+        var priceFilter = products.sort(function(a,b) {
+            return b.saleprice - a.saleprice;
+        })
+    } else if (document.getElementById('sort').value = 'price-low') {
+        var priceFilter = products.sort(function(a,b) {
+            return a.saleprice - b.saleprice;
+        })
+    } else {
+        return 0;
+    }
 
-// }
+    renderProducts(priceFilter);
+}
 
-// function sortByPriceDescending() {
-//     products.sort((a,b) => Number(b.saleprice) - Number(a.saleprice))
+document.getElementById('sort').addEventListener('change', sortByPrice)
 
-// }
 
 //filter options
 function filterByBrand(products) {
