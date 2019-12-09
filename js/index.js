@@ -253,7 +253,7 @@ function getProductAsHtmlString(products) {
                         <dd>${products.available}</dd>
                     </dl>
                     <data value="${products.saleprice}"><del>$${products.retailprice}.00</del> <ins>$${products.saleprice}.00</ins></data>
-                    <button type="button">Add to Cart</button>
+                    <button type="button" onclick="addToCart(1)">Add to Cart</button>
                 </footer>
                 
         </article>`;
@@ -275,6 +275,8 @@ function searchByName(event) {
     renderProducts(arrNameCheck);
 }
 
+//Sort by price
+
 // function sortByPriceAscending() {
 //     products.sort((a,b) => Number(a.saleprice) - Number(b.saleprice))
 
@@ -285,7 +287,7 @@ function searchByName(event) {
 
 // }
 
-
+//filter options
 function filterByBrand(products) {
     return products.brand == this;
   }
@@ -301,7 +303,6 @@ function filterByStorage(products) {
 function filterByRAM(products) {
     return products.ram == this;
 }
-
 
 function searchByBrand(event) {
     const searchTerm = event.target.value;
@@ -327,6 +328,7 @@ function searchByRAM(event) {
     renderProducts(arrCatCheck);
   }
 
+//Reset filter options
 function resetFilters() {
     document.getElementById(filterByBrand).reset();
     document.getElementById(filterByColour).reset();
@@ -334,8 +336,15 @@ function resetFilters() {
     document.getElementById(filterByRAM).reset();
 }
 
-renderProducts(products);
+//Add to cart
+let numProductsInCart = 0;
 
+function addToCart(productToCart) {
+    numProductsInCart += productToCart;
+    document.getElementById('cartnumber').innerHTML = numProductsInCart;
+}
+
+renderProducts(products);
 
 document.getElementById('nameSearch').addEventListener('input', searchByName)
 document.getElementById('filterbybrand').addEventListener('change', searchByBrand)
